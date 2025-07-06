@@ -6,7 +6,7 @@ jobs: # specify that you want to run a job.
     testing_github: # name your job.
         runs-on: ubuntu-latest # pick what your job runs on.
 
-        steps: # specify that you want to run steps for your job 
+        steps: # specify that you want to run one or more steps for your job 
             - name: Hello # name the step of your job
               run: echo "Hello, GitHub Actions" # run the commands your step is supposed to do.
 
