@@ -1,0 +1,14 @@
+name: My GitHub Actions Workflow # name your workflow
+
+on: [push] # define what action your workflow triggers on
+
+jobs: # specify that you want to run a job.
+    testing_github: # name your job.
+        runs-on: ubuntu-latest # pick what your job runs on.
+
+        steps: # specify that you want to run steps for your job 
+            - name: Hello # name the step of your job
+              run: echo "Hello, GitHub Actions" # run the commands your step is supposed to do.
+
+            - name: Display Repo name # name the next step of your job.
+              run: echo "This woorkflow is running in ${{ github.repository }}" # run the next command your next step is supposed to do.
